@@ -165,3 +165,4 @@ venv/*
 data/
 input/
 .DS_Store
+20*/*.csv
