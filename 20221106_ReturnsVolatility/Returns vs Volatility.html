@@ -14779,7 +14779,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Top 30 coins are : bitcoin| ethereum| tether| binancecoin| usd-coin| ripple| binance-usd| dogecoin| cardano| solana| matic-network| polkadot| staked-ether| shiba-inu| tron| dai| uniswap| okb| avalanche-2| litecoin| wrapped-bitcoin| cosmos| chainlink| leo-token| ethereum-classic| crypto-com-chain| algorand| ftx-token| monero| stellar
+<pre>Top 30 coins are : bitcoin| ethereum| tether| binancecoin| usd-coin| ripple| binance-usd| dogecoin| cardano| solana| matic-network| polkadot| staked-ether| shiba-inu| tron| dai| uniswap| okb| avalanche-2| wrapped-bitcoin| litecoin| cosmos| chainlink| leo-token| ethereum-classic| crypto-com-chain| algorand| ftx-token| monero| stellar
 </pre>
 </div>
 </div>
@@ -14813,7 +14813,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">coins</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">top30_coins</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">([</span><span class="s2">&quot;tether&quot;</span><span class="p">,</span> <span class="s2">&quot;usd-coin&quot;</span><span class="p">,</span> <span class="s2">&quot;binance-usd&quot;</span><span class="p">,</span> <span class="s2">&quot;dai&quot;</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total coins that we&#39;ll analyze: {len(coins}&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total coins that we&#39;ll analyze: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">coins</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14833,7 +14833,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Total coins that we&#39;ll analyze: {len(coins}
+<pre>Total coins that we&#39;ll analyze: 26
 </pre>
 </div>
 </div>
@@ -15044,7 +15044,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>100%|███████████████████████████████████████████| 26/26 [00:17&lt;00:00,  1.45it/s]</pre>
+<pre>100%|███████████████████████████████████████████| 26/26 [02:16&lt;00:00,  5.25s/it]</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -15101,32 +15101,32 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     <tr>
       <th>0</th>
       <td>2020-02-12</td>
-      <td>0.074029</td>
-      <td>stellar</td>
+      <td>0.003053</td>
+      <td>dogecoin</td>
     </tr>
     <tr>
       <th>1</th>
       <td>2020-02-13</td>
-      <td>0.079962</td>
-      <td>stellar</td>
+      <td>0.003051</td>
+      <td>dogecoin</td>
     </tr>
     <tr>
       <th>2</th>
       <td>2020-02-14</td>
-      <td>0.083081</td>
-      <td>stellar</td>
+      <td>0.003033</td>
+      <td>dogecoin</td>
     </tr>
     <tr>
       <th>3</th>
       <td>2020-02-15</td>
-      <td>0.086026</td>
-      <td>stellar</td>
+      <td>0.003102</td>
+      <td>dogecoin</td>
     </tr>
     <tr>
       <th>4</th>
       <td>2020-02-16</td>
-      <td>0.078634</td>
-      <td>stellar</td>
+      <td>0.002960</td>
+      <td>dogecoin</td>
     </tr>
   </tbody>
 </table>
@@ -15407,7 +15407,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">returns_df</span> <span class="o">=</span> <span class="n">coins_df</span><span class="o">.</span><span class="n">pct_change</span><span class="p">()</span>
-<span class="n">returns_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">returns_df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15495,124 +15495,124 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   </thead>
   <tbody>
     <tr>
-      <th>2020-02-11</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <th>2022-11-03</th>
+      <td>0.007440</td>
+      <td>-0.040641</td>
+      <td>-0.013652</td>
+      <td>-0.015943</td>
+      <td>-0.037068</td>
+      <td>-0.034166</td>
+      <td>-0.057238</td>
+      <td>-0.022640</td>
+      <td>-0.102560</td>
+      <td>-0.037801</td>
       <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>-0.018818</td>
+      <td>-0.034441</td>
+      <td>-0.027764</td>
+      <td>-0.084900</td>
+      <td>-0.045056</td>
+      <td>-0.037442</td>
+      <td>-0.023386</td>
+      <td>-0.020282</td>
+      <td>-0.004082</td>
+      <td>-0.015636</td>
     </tr>
     <tr>
-      <th>2020-02-12</th>
-      <td>0.019889</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <th>2022-11-04</th>
+      <td>0.015829</td>
+      <td>0.007150</td>
+      <td>0.029111</td>
+      <td>0.002377</td>
+      <td>0.007973</td>
+      <td>0.036287</td>
+      <td>0.013570</td>
+      <td>0.009878</td>
+      <td>-0.042206</td>
+      <td>0.006888</td>
       <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>0.238041</td>
+      <td>0.027676</td>
+      <td>0.008243</td>
+      <td>-0.004888</td>
+      <td>0.001242</td>
+      <td>0.005952</td>
+      <td>0.009372</td>
+      <td>0.003032</td>
+      <td>-0.023377</td>
+      <td>0.002651</td>
     </tr>
     <tr>
-      <th>2020-02-13</th>
-      <td>0.054348</td>
-      <td>NaN</td>
-      <td>0.029103</td>
-      <td>0.009971</td>
-      <td>0.069996</td>
-      <td>0.008291</td>
-      <td>0.006805</td>
-      <td>0.031364</td>
-      <td>-0.000564</td>
-      <td>0.115072</td>
+      <th>2022-11-05</th>
+      <td>0.121218</td>
+      <td>0.074327</td>
+      <td>0.070882</td>
+      <td>0.046480</td>
+      <td>0.082802</td>
+      <td>0.135742</td>
+      <td>0.114647</td>
+      <td>0.058673</td>
+      <td>0.028668</td>
+      <td>0.073855</td>
       <td>...</td>
-      <td>0.063258</td>
-      <td>NaN</td>
-      <td>0.071382</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0.080142</td>
-      <td>0.047729</td>
-      <td>NaN</td>
-      <td>0.010197</td>
+      <td>0.031912</td>
+      <td>0.101183</td>
+      <td>0.103173</td>
+      <td>0.068758</td>
+      <td>0.096080</td>
+      <td>0.074235</td>
+      <td>0.060922</td>
+      <td>0.031074</td>
+      <td>0.087288</td>
+      <td>0.046769</td>
     </tr>
     <tr>
-      <th>2020-02-14</th>
-      <td>-0.105214</td>
-      <td>NaN</td>
-      <td>-0.038491</td>
-      <td>-0.010421</td>
-      <td>0.015952</td>
-      <td>-0.032681</td>
-      <td>-0.048112</td>
-      <td>0.032400</td>
-      <td>-0.005959</td>
-      <td>0.013777</td>
+      <th>2022-11-06</th>
+      <td>0.025658</td>
+      <td>0.011491</td>
+      <td>-0.012020</td>
+      <td>0.006273</td>
+      <td>0.012811</td>
+      <td>-0.009544</td>
+      <td>0.024363</td>
+      <td>0.036154</td>
+      <td>-0.013200</td>
+      <td>-0.010574</td>
       <td>...</td>
-      <td>-0.002646</td>
-      <td>NaN</td>
-      <td>0.075217</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0.039017</td>
-      <td>0.000578</td>
-      <td>NaN</td>
-      <td>-0.002788</td>
+      <td>0.075787</td>
+      <td>-0.007183</td>
+      <td>-0.018023</td>
+      <td>-0.005680</td>
+      <td>0.086715</td>
+      <td>-0.010174</td>
+      <td>-0.015979</td>
+      <td>-0.001392</td>
+      <td>0.019733</td>
+      <td>0.006341</td>
     </tr>
     <tr>
-      <th>2020-02-15</th>
-      <td>0.051439</td>
-      <td>NaN</td>
-      <td>0.032833</td>
-      <td>0.009676</td>
-      <td>0.028717</td>
-      <td>0.138224</td>
-      <td>0.040370</td>
-      <td>0.010096</td>
-      <td>0.022825</td>
-      <td>0.061873</td>
+      <th>2022-11-07</th>
+      <td>0.000000</td>
+      <td>-0.066123</td>
+      <td>-0.022399</td>
+      <td>-0.017666</td>
+      <td>-0.053596</td>
+      <td>-0.062934</td>
+      <td>0.000000</td>
+      <td>-0.023699</td>
+      <td>-0.077918</td>
+      <td>-0.033107</td>
       <td>...</td>
-      <td>0.091021</td>
-      <td>NaN</td>
-      <td>0.031075</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0.035446</td>
-      <td>0.092653</td>
-      <td>NaN</td>
-      <td>0.012724</td>
+      <td>-0.013481</td>
+      <td>-0.028591</td>
+      <td>-0.044921</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.035158</td>
+      <td>-0.038599</td>
+      <td>-0.012790</td>
+      <td>-0.079132</td>
+      <td>-0.016561</td>
     </tr>
   </tbody>
 </table>
@@ -15703,13 +15703,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-adcece79ee9a4ec9bfc50134d997c996"></div>
+<div id="altair-viz-d1b0252110524c9ab612f4143e89c016"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-adcece79ee9a4ec9bfc50134d997c996") {
-      outputDiv = document.getElementById("altair-viz-adcece79ee9a4ec9bfc50134d997c996");
+    if (outputDiv.id !== "altair-viz-d1b0252110524c9ab612f4143e89c016") {
+      outputDiv = document.getElementById("altair-viz-d1b0252110524c9ab612f4143e89c016");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15948,13 +15948,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-03585e3f99704816b92ae292d50b003b"></div>
+<div id="altair-viz-645824115d694de5860dbfaffbe836b0"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-03585e3f99704816b92ae292d50b003b") {
-      outputDiv = document.getElementById("altair-viz-03585e3f99704816b92ae292d50b003b");
+    if (outputDiv.id !== "altair-viz-645824115d694de5860dbfaffbe836b0") {
+      outputDiv = document.getElementById("altair-viz-645824115d694de5860dbfaffbe836b0");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16123,13 +16123,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-cee690cc7b3b409c868b7f4448ad2e4b"></div>
+<div id="altair-viz-4afe8f8ed46a43edb7ca243b4bf8d911"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-cee690cc7b3b409c868b7f4448ad2e4b") {
-      outputDiv = document.getElementById("altair-viz-cee690cc7b3b409c868b7f4448ad2e4b");
+    if (outputDiv.id !== "altair-viz-4afe8f8ed46a43edb7ca243b4bf8d911") {
+      outputDiv = document.getElementById("altair-viz-4afe8f8ed46a43edb7ca243b4bf8d911");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16301,13 +16301,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-dda820d91ade4adfbe51dfc3eb26f3e7"></div>
+<div id="altair-viz-16eae782bcf04638bc196f877def788e"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-dda820d91ade4adfbe51dfc3eb26f3e7") {
-      outputDiv = document.getElementById("altair-viz-dda820d91ade4adfbe51dfc3eb26f3e7");
+    if (outputDiv.id !== "altair-viz-16eae782bcf04638bc196f877def788e") {
+      outputDiv = document.getElementById("altair-viz-16eae782bcf04638bc196f877def788e");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16483,13 +16483,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-c2ef466f134c4ccb89467f331a84b432"></div>
+<div id="altair-viz-dbf6c2c60e1c427986d90ee576949181"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c2ef466f134c4ccb89467f331a84b432") {
-      outputDiv = document.getElementById("altair-viz-c2ef466f134c4ccb89467f331a84b432");
+    if (outputDiv.id !== "altair-viz-dbf6c2c60e1c427986d90ee576949181") {
+      outputDiv = document.getElementById("altair-viz-dbf6c2c60e1c427986d90ee576949181");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -16587,7 +16587,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>With this we come to the end of this post analyzing returns vs volatility. Hope you enjoyed it. Do let us know your valualable feedback and other things you'd would have liked to include when doing such coin market performance analysis. Until next time, take care!</p>
+<p>With this we come to the end of this post analyzing returns vs volatility. Hope you enjoyed it. Do let us know your valualable feedback and other things you'd have liked to include when doing such coin market performance analysis. Until next time, take care!</p>
 <hr />
 
 </div>
